@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* Adiciona a imagem de fundo com efeito de blur */
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Login_Image2.webp'); /* Caminho para a imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Aplica o desfoque ao fundo */
+    z-index: -1; /* Mantém o fundo atrás do conteúdo de login */
+}
+
+.login-container {
+    display: flex;
+    position: relative; /* Permite sobrepor ao fundo */
+    background-color: #fff; 
+    z-index: 1; /* Garante que o conteúdo de login esteja sobre o fundo */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    width: 350px;
+    text-align: center;
+    z-index: 2; /* Garante que o formulário esteja acima de tudo */
+}
+
+.login-image {
+    flex: 1;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image img {
+    width: 101%;
+    height: 100%;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+
+
+
+
+}
+
+.login-form h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-group .eye {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: "20";
+    height:"20";
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

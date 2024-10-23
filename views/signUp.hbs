@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrever-se - Jogo Isométrico</title>
+    <link rel="stylesheet" href="/css/style (tela login).css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Inscreva-se</h2>
+            {{#if message }}
+                <h4 class="alert alert-danger mt-4">{{message}}</h4>
+            {{/if}}
+            <form id="signupForm" action="/auth/signUp" method="post">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="@mail.com" required name="email">
+                </div>
+                <div class="input-group">
+                    <label for="nome">Nickname</label>
+                    <input type="text" id="nome" required name="nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" required name="senha">
+                </div>
+                <div class="input-group">
+                    <label for="confirmarSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmarSenha" required name="confirmarSenha">
+                </div>
+                <button type="submit" class="login-btn">Criar Conta</button>
+            </form>
+            <div class="social-login">
+                <p>Ou crie sua conta com:</p>
+                <div class="social-icons">
+                    <a href="/loginSM"><img src="../img/icons8-facebook-novo.svg" alt="Facebook"></a>
+                    <a href="/loginSM"><img src="../img/icons8-google-logo.svg" alt="Google"></a>
+                    <a href="/loginSM"><img src="../img/icons8-mac-os.svg" alt="Apple"></a>
+                </div>
+            </div>
+            <div class="signup">
+                Já tem uma conta? <a href="/">Entre aqui</a>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="/public/js/signup.js"></script>
+</body>
+</html>

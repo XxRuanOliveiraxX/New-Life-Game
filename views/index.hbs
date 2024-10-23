@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Jogo Isométrico</title>
+    <link rel="stylesheet" href="/css/style (tela login).css">
+</head>
+<body>
+
+<!-- Adiciona o fundo com blur -->
+<div class="background-blur"></div>
+
+<div class="login-container">
+    <div class="login-form">
+        <h2>New Life</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">E-mail</label>
+                <input type="text" id="username" placeholder="@mail.com" required>
+            </div>
+            <div class="input-group password-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="password" required>
+                <span class="eye" id="togglePassword">
+                    <img src="img/icons8-trancar.svg" alt="Olho Fechado">
+                </span>
+            </div>
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="rememberME"> Lembrar minha senha
+                </label>
+                <a href="/forgotPassword" class="forgot-password">Esqueceu a Senha?</a>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+        </form>
+        <div class="signup">
+            <p>Não Tem Uma Conta? <a href="/signUp">Inscrever-se</a></p>
+        </div>
+        <div class="social-login">
+ 
+            <div class="social-icons">
+                <a href="/loginSM"><img src="../img/icons8-facebook-novo.svg" alt="Facebook" width="30" height="30"></a>
+                <a href="/loginSM"><img src="../img/icons8-google-logo.svg" alt="Google" width="30" height="30"></a>
+                <a href="/loginSM"><img src="../img/icons8-mac-os.svg" alt="Apple" width="30" height="30"></a>
+            </div>
+            <p></p>
+            <p>Faça login com um desses métodos</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/olhosenha.js"></script>
+<script src="/js/login.js"></script>
+
+</body>
+</html>
